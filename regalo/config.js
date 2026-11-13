@@ -156,7 +156,7 @@ const CONFIG = {
   },
 
   vales: [
-    { id: "cita",    titulo: "Cita sorpresa",            detalle: "Vos no sabés dónde. Yo sí.",          color: "pink" },
+    { id: "cita",    titulo: "Cita sorpresa",            detalle: "Vos no sabés dónde. Yo sí Muejejjeje",          color: "pink" },
     { id: "pelis",   titulo: "Noche de películas",       detalle: "Manta, pochoclo y vos elegís.",       color: "acid" },
     { id: "bolso",  titulo: "Bolso para la universidad", detalle: "Elegi el que mas te guste.",          color: "lav" },
     { id: "cena",    titulo: "Cena",                     detalle: "Cocino yo (o pedimos, pero invito).", color: "cream" },
