@@ -72,9 +72,17 @@
   $("#bkPrev").onclick = () => turn(-1); $("#bkNext").onclick = () => turn(1);
   addEventListener("keydown", e => { if (book.hidden || /TEXTAREA/.test(e.target.tagName)) return; if (e.key === "ArrowRight") turn(1); if (e.key === "ArrowLeft") turn(-1); });
   addEventListener("resize", draw);
-  let sx = null;                                   // deslizar para pasar de página
-  book.addEventListener("touchstart", e => { sx = /TEXTAREA|VIDEO/.test(e.target.tagName) ? null : e.touches[0].clientX; }, { passive: true });
-  book.addEventListener("touchend", e => { if (sx == null) return; const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 60) turn(dx < 0 ? 1 : -1); sx = null; });
+  let startTouch = null;                           // deslizar para pasar de página
+  book.addEventListener("touchstart", e => {
+    startTouch = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+  }, { passive: true, capture: true });
+  book.addEventListener("touchend", e => {
+    if (!startTouch) return;
+    const dx = e.changedTouches[0].clientX - startTouch.x, dy = e.changedTouches[0].clientY - startTouch.y;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy)) turn(dx < 0 ? 1 : -1);
+    startTouch = null;
+  }, { passive: true, capture: true });
+  book.addEventListener("touchcancel", () => { startTouch = null; }, { passive: true, capture: true });
 
   book.addEventListener("input", e => { const k = e.target.dataset.key; if (k) try { localStorage.setItem("pibble-" + k, e.target.value); } catch (_) {} });
   book.addEventListener("click", e => {
