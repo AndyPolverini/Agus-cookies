@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Libro de recuerdos</title>
+<meta name="theme-color" content="#ff2e93">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Caveat:wght@600&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LIBRO (se arma desde config.js) -->
+<div id="book"><p class="bk-wait">Cargando el libro…</p></div>
+<noscript><p style="padding:1rem">Este libro necesita JavaScript activado.</p></noscript>
+
+<button id="musicBtn" hidden aria-pressed="false">♪ música: no</button>
+<audio id="bgm" loop></audio>
+
+<script>addEventListener("error",function(e){var b=document.getElementById("book");if(b&&/Cargando/.test(b.textContent))b.innerHTML='<p class="bk-wait">Algo falló: '+(e.message||"no se pudo cargar un archivo")+'. Descomprimí el ZIP completo y abrí index.html desde la carpeta.</p>'},true)</script>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
