@@ -40,6 +40,7 @@
   const valePage = () => C.vales.reduce((a, v, i) => { (a[Math.floor(i / 3)] = a[Math.floor(i / 3)] || []).push(v); return a; }, []).map(g => ({ cls: "bk-valepg", html: `<h3>Vales</h3><div class="bk-vales">` + g.map(v => `<article class="vale ${esc(v.color)}${used.includes(v.id) ? " used" : ""}"><h3>${esc(v.titulo)}</h3><p>${esc(v.detalle)}</p><span class="stamp">USADO</span><button class="btn" data-vale="${esc(v.id)}" type="button">${used.includes(v.id) ? "Deshacer" : "Canjear"}</button></article>`).join("") + `</div>` }));
   const vi = pages.findIndex(p => p.cls === "bk-write");   // vales antes de las páginas de escritura
   pages.splice(vi < 0 ? pages.length : vi, 0, ...valePage());
+  pages.push({ cls: "bk-note", html: `<h3>${esc(C.notaFinal.saludo)}</h3>${C.notaFinal.texto.map(p => `<p>${esc(p)}</p>`).join("")}` });
 
   const band = (t, cls, dur) => { const x = (esc(t.toUpperCase()) + " ✶ ").repeat(7); return `<div class="bk-band ${cls}"><div class="mq" style="--dur:${dur}s"><span>${x}</span><span>${x}</span></div></div>`; };
   const cols = ["#ff2e93", "#c8ff2e", "#000", "#fffdf7"], gl = ["✶", "✦", "●", "✿"];

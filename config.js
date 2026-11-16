@@ -145,6 +145,11 @@ const CONFIG = {
     ]
   },
 
+  notaFinal: {
+    saludo: "Una última nota:",
+    texto: []
+  },
+
   vales: [
     { id: "cita",    titulo: "Cita sorpresa",            detalle: "Vos no sabés dónde. Yo sí Muejejjeje",          color: "pink" },
     { id: "pelis",   titulo: "Noche de películas",       detalle: "cenita, pochoclos y vos elegís la peli.",       color: "acid" },

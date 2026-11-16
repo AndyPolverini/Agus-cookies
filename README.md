@@ -10,7 +10,7 @@ Abrilo con un servidor local (los celulares/navegadores son más estrictos con a
 - **Nombre, fecha, título, mensaje, firma:** primeras líneas.
 - **Recuerdos:** fotos y videos ya están cargados (optimizados) en `recuerdos`, en orden cronológico. Para sumar uno, copialo a `assets/fotos/` o `assets/videos/` y agregá `{ tipo: "foto", archivo: "x.jpg", fecha: "2024-05", descripcion: "..." }`. Para reordenar, mové las líneas. Se agrupan 4 fotos (o 2 videos) por página y por mes.
 - **Notas:** la carta tuya es la 2ª página; `paginasNota` define las páginas en blanco donde ella escribe (se guarda en su celular y tiene botón para copiar).
-- **Carta:** cada texto de `carta.texto` es un párrafo.
+- **Carta:** cada texto de `carta.texto` es un párrafo. La página final usa `notaFinal`; agregá ahí el saludo y los párrafos de tu nota.
 - **Vales:** editá, quitá o agregá objetos en `vales` (`color`: pink, acid, lav, cream). El estado "usado" queda guardado en el celular de ella.
 - **Música:** `assets/musica/ambiente.mp3` (opcional, solo suena si ella toca ♪).
 
