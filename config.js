@@ -7,6 +7,7 @@ const CONFIG = {
   portada: [],   
   firma: "Andy",
 
+  musica: "assets/musica/Callejeros - Creo (Letra).mp3", // opcional; el botón ♪ se oculta si no existe
 
   recuerdos: [
     { tipo: "foto", archivo: "001.jpg", fecha: "2024-02", descripcion: "" },  // IMG_20240212_203246.jpg
@@ -133,10 +134,6 @@ const CONFIG = {
   paginasNota: [
     { clave: "nota",   titulo: "Tu nota",                 ayuda: "Escribí acá lo que quieras, es solo para vos" },
   ],
-
-carta2: {
-   texto:[ titulo: "Nos falta vivir muchas cosas mas, pero espero que sea a tu lado, feliz cumple mi vida, te amo por siempre" ]
-  }
 
   carta: {
     saludo: "Mi amor:",
