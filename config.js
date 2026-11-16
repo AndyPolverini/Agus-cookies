@@ -7,7 +7,6 @@ const CONFIG = {
   portada: [],   
   firma: "Andy",
 
-  musica: "assets/musica/Callejeros - Creo (Letra).mp3", // opcional; el botón ♪ se oculta si no existe
 
   recuerdos: [
     { tipo: "foto", archivo: "001.jpg", fecha: "2024-02", descripcion: "" },  // IMG_20240212_203246.jpg
