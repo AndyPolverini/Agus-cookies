@@ -106,7 +106,7 @@ button{font:inherit;cursor:pointer}
 .vale.used{filter:grayscale(.8) contrast(.9)}.vale.used .stamp{display:block}
 .fin{margin-top:4rem;font:2.2rem var(--hand);text-align:center}
 #musicBtn{position:fixed;right:.8rem;bottom:calc(.8rem + env(safe-area-inset-bottom));z-index:60;font:1rem var(--type);background:var(--acid);border:3px solid var(--ink);box-shadow:3px 3px 0 var(--ink);padding:.4rem .7rem}
-@media(max-width:699px){#musicBtn{right:.4rem;bottom:calc(1.5rem + env(safe-area-inset-bottom))}}
+@media(max-width:699px){#musicBtn{right:.4rem;bottom:calc(.1rem + env(safe-area-inset-bottom))}}
 @media(min-width:700px){.album{columns:3 200px}}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-iteration-count:1!important;transition-duration:.01s!important}}
 
@@ -175,3 +175,8 @@ button{font:inherit;cursor:pointer}
 .bk-cover h3{font-size:5.4cqw}.cv-msg{font:5.6cqw var(--hand);max-width:62cqw}.bk-cover small{margin-top:0;max-width:62cqw}
 .cv-open{position:absolute;right:4cqw;bottom:4cqw;width:24cqw;height:24cqw;border-radius:50%;padding:0;line-height:1;transform:rotate(-12deg);animation:wob 2.2s ease-in-out infinite;display:grid;place-items:center}
 @keyframes wob{50%{transform:rotate(8deg) scale(1.08)}}
+@media(max-width:899px){
+  .bk-cover h3{font-size:6.8cqw;align-self:center;max-width:100%;text-align:center;transform:none}
+  .cv-msg{font-size:7cqw;max-width:100%;align-self:center;text-align:center}
+  .bk-cover small{font-size:5cqw;max-width:100%;align-self:center;text-align:center}
+}
