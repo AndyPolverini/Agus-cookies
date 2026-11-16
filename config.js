@@ -1,22 +1,14 @@
-/* ============================================================
-   CONFIG.JS — lo único que tenés que tocar para personalizar.
-   Las fotos/videos van en assets/fotos y assets/videos.
-   Para agregar una foto: copiala a la carpeta y sumá UNA línea.
-   El orden de las listas es el orden en pantalla.
-   ============================================================ */
+
 const CONFIG = {
   nombre: "Agus",
   fecha: "30/11/2026",
   tituloLibro: "Cosas que guardé de vos",
   mensajeCumple: "Feliz cumple, mi amor. Pasá la página.",
-  portada: [],   // opcional: hasta 3 fotos para la portada, ej. ["005.jpg","040.jpg","090.jpg"]. Vacío = elige solas.
+  portada: [],   
   firma: "Andy",
 
-  musica: "assets/musica/ambiente.mp3", // opcional; el botón ♪ se oculta si no existe
+  musica: "assets/musica/Callejeros - Creo (Letra).mp3", // opcional; el botón ♪ se oculta si no existe
 
-  // Recuerdos en orden cronológico. Para reordenar, mové las líneas.
-  // tipo: "foto" | "video" · fecha: "AAAA-MM" (agrupa por mes; "" = "más recuerdos")
-  // descripcion: texto que aparece bajo la foto (opcional).
   recuerdos: [
     { tipo: "foto", archivo: "001.jpg", fecha: "2024-02", descripcion: "" },  // IMG_20240212_203246.jpg
     { tipo: "foto", archivo: "002.jpg", fecha: "2024-02", descripcion: "" },  // IMG_20240212_203255.jpg
@@ -139,11 +131,13 @@ const CONFIG = {
     { tipo: "foto", archivo: "111.jpg", fecha: "", descripcion: "" },  // WhatsApp Image 2026-11-12 at 15.21.10.jp
   ],
 
-  // Páginas en blanco donde ella puede escribir (se guarda en su celular)
   paginasNota: [
-    { clave: "nota",   titulo: "Tu nota",                 ayuda: "Escribí acá lo que quieras…" },
-    { clave: "futuro", titulo: "Lo que nos falta vivir",  ayuda: "Como en el libro de Ellie: lo que todavía no hicimos…" }
+    { clave: "nota",   titulo: "Tu nota",                 ayuda: "Escribí acá lo que quieras, es solo para vos" },
   ],
+
+carta2: {
+   texto:[ titulo: "Nos falta vivir muchas cosas mas, pero espero que sea a tu lado, feliz cumple mi vida, te amo por siempre" ]
+  }
 
   carta: {
     saludo: "Mi amor:",
