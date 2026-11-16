@@ -176,8 +176,8 @@ button{font:inherit;cursor:pointer}
 .cv-open{position:absolute;right:4cqw;bottom:4cqw;width:24cqw;height:24cqw;border-radius:50%;padding:0;line-height:1;transform:rotate(-12deg);animation:wob 2.2s ease-in-out infinite;display:grid;place-items:center}
 @keyframes wob{50%{transform:rotate(8deg) scale(1.08)}}
 @media(max-width:899px){
-  .bk-cover h3{font-size:5.4cqw;align-self:center;max-width:100%;text-align:center;transform:none}
-  .cv-msg{font-size:5.6cqw;max-width:100%;align-self:center;text-align:center}
-  .bk-cover small{font-size:4.6cqw;max-width:100%;align-self:center;text-align:center}
+  .bk-cover h3{font-size:6.8cqw;align-self:center;max-width:100%;text-align:center;transform:none}
+  .cv-msg{font-size:7cqw;max-width:100%;align-self:center;text-align:center}
+  .bk-cover small{font-size:5cqw;max-width:100%;align-self:center;text-align:center}
   .cv-open{position:relative;right:auto;bottom:auto;align-self:flex-end;flex:none;margin-top:auto}
 }
