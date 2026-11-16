@@ -106,6 +106,7 @@ button{font:inherit;cursor:pointer}
 .vale.used{filter:grayscale(.8) contrast(.9)}.vale.used .stamp{display:block}
 .fin{margin-top:4rem;font:2.2rem var(--hand);text-align:center}
 #musicBtn{position:fixed;right:.8rem;bottom:calc(.8rem + env(safe-area-inset-bottom));z-index:60;font:1rem var(--type);background:var(--acid);border:3px solid var(--ink);box-shadow:3px 3px 0 var(--ink);padding:.4rem .7rem}
+@media(max-width:699px){#musicBtn{right:.4rem;bottom:calc(1.5rem + env(safe-area-inset-bottom))}}
 @media(min-width:700px){.album{columns:3 200px}}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-iteration-count:1!important;transition-duration:.01s!important}}
 
