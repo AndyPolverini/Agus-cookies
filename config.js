@@ -147,7 +147,9 @@ const CONFIG = {
 
   notaFinal: {
     saludo: "Una última nota:",
-    texto: [Espero que pases un cumpleaños increíble y que este regalo te haga sonreír. Te amo mucho y estoy muy agradecido de tenerte en mi vida. Feliz Cumpleaños, Te amo con toda mi alma.],
+    texto: [
+      "Espero que pases un cumpleaños increíble y que este regalo te haga sonreír. Te amo mucho y estoy muy agradecido de tenerte en mi vida. Feliz Cumpleaños, Te amo con toda mi alma."
+    ]
   },
 
   vales: [
